@@ -1,0 +1,21 @@
+{
+  "name": "mdx-deck-template",
+  "version": "1.0.0",
+  "description": "MDX Deck Presentation",
+  "main": "index.js",
+  "repository": "git@github.com:mikehaugland/mdx-deck-template.git",
+  "author": "Mike Haugland <mike.haugland@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx",
+    "pdf": "mdx-deck pdf deck.mdx",
+    "image": "mdx-deck screenshot deck.mdx",
+    "help": "mdx-deck"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mdx-deck": "^3.0.8"
+  }
+}
