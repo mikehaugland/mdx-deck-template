@@ -4679,6 +4679,14 @@ gatsby-react-router-scroll@^2.1.3:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
+gatsby-remark-import-code@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-import-code/-/gatsby-remark-import-code-0.1.1.tgz#7cefff965f6f2c58685f7dab51359713e9f37bed"
+  integrity sha512-sFIgQbMlY5o3DHIHpVO8F4vca9JP1PHIZr9QtElDAPEzwSd5Bxig5OC/ztGhgmZtXpjX5/eazHtrsGwVdLZ6MQ==
+  dependencies:
+    shell-quote "^1.6.1"
+    unist-util-visit "^1.4.1"
+
 gatsby-source-filesystem@^2.1.3:
   version "2.1.7"
   resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.1.7.tgz#ad46eec78831e69dd716cb8188e2ed7df68b9981"
@@ -4723,10 +4731,10 @@ gatsby-telemetry@^1.1.7:
     stack-utils "1.0.2"
     uuid "3.3.2"
 
-gatsby-theme-mdx-deck@^3.0.8:
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-mdx-deck/-/gatsby-theme-mdx-deck-3.0.8.tgz#eaffda924fc4813e14c773515fd025d780fe222b"
-  integrity sha512-UzDnmURi10DoyIJx7WVNG/IW4V+saAAhXlVQoHtB8/OhwJV7Pzj1mjFaOYmWtpI/PJ5qWRhHPYFLOx8+aCwU1Q==
+gatsby-theme-mdx-deck@^3.0.13:
+  version "3.0.13"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-mdx-deck/-/gatsby-theme-mdx-deck-3.0.13.tgz#822763288db67392b7bfcf39e5fce020f9610359"
+  integrity sha512-oeorRdFk3EbWrOMGaXgcFPArvYR7rd4Ioryj14nGg1CqWvSfJMB3vZtcBCWpfLSbIw2j7ZWBFL4GL14xvBPNxw==
   dependencies:
     "@emotion/core" "^10.0.14"
     "@mdx-deck/themes" "^3.0.8"
@@ -4741,6 +4749,7 @@ gatsby-theme-mdx-deck@^3.0.8:
     gatsby-plugin-mdx "^1.0.13"
     gatsby-plugin-react-helmet "^3.1.0"
     gatsby-plugin-theme-ui "^0.2.6"
+    gatsby-remark-import-code "^0.1.1"
     gatsby-source-filesystem "^2.1.3"
     hhmmss "^1.0.0"
     lodash.get "^4.4.2"
@@ -6893,10 +6902,10 @@ mdurl@^1.0.1:
   resolved "https://registry.yarnpkg.com/mdurl/-/mdurl-1.0.1.tgz#fe85b2ec75a59037f2adfec100fd6c601761152e"
   integrity sha1-/oWy7HWlkDfyrf7BAP1sYBdhFS4=
 
-mdx-deck@^3.0.8:
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/mdx-deck/-/mdx-deck-3.0.8.tgz#b3e107b9877eb6e2740266fbbb72274b2643119c"
-  integrity sha512-LMnxAtrB4mFlnC3Ow+FRNkH98KTRzEJb1+sLyazEOHW6a86wKpHuTPIy0pJRVK4I1jJ00VyhGgqLJslaZoS/Iw==
+mdx-deck@^3.0.13:
+  version "3.0.13"
+  resolved "https://registry.yarnpkg.com/mdx-deck/-/mdx-deck-3.0.13.tgz#fdb492e8f844f2b6a05cfdb368833b254cf0d45a"
+  integrity sha512-yKmls4BSEeR2g/kfanPAC+A8diagsQs0BFbGm41vi8UScKkE8LnlZDCypTdkhIcr0B0wU9Ft+fcL19WQABr8hQ==
   dependencies:
     "@mdx-deck/themes" "^3.0.8"
     chalk "^2.4.2"
@@ -6904,7 +6913,7 @@ mdx-deck@^3.0.8:
     fs-extra "^8.1.0"
     gatsby "^2.13.24"
     gatsby-plugin-compile-es6-packages "^2.0.0"
-    gatsby-theme-mdx-deck "^3.0.8"
+    gatsby-theme-mdx-deck "^3.0.13"
     initit "^1.0.0-2"
     meow "^5.0.0"
     react "^16.8.6"
@@ -9640,6 +9649,11 @@ shell-quote@1.6.1:
     array-reduce "~0.0.0"
     jsonify "~0.0.0"
 
+shell-quote@^1.6.1:
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
+  integrity sha512-mRz/m/JVscCrkMyPqHc/bczi3OQHkLTqXHEFu0zDhK/qfv3UcOA4SVmRCLmos4bhjr9ekVQubj/R7waKapmiQg==
+
 sift@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/sift/-/sift-5.1.0.tgz#1bbf2dfb0eb71e56c4cc7fb567fbd1351b65015e"
@@ -10715,7 +10729,7 @@ unist-util-visit-parents@^2.0.0:
   dependencies:
     unist-util-is "^3.0.0"
 
-unist-util-visit@1.4.1, unist-util-visit@^1.0.0, unist-util-visit@^1.1.0, unist-util-visit@^1.4.0:
+unist-util-visit@1.4.1, unist-util-visit@^1.0.0, unist-util-visit@^1.1.0, unist-util-visit@^1.4.0, unist-util-visit@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-1.4.1.tgz#4724aaa8486e6ee6e26d7ff3c8685960d560b1e3"
   integrity sha512-AvGNk7Bb//EmJZyhtRUnNMEpId/AZ5Ph/KUpTI09WHQuDZHKovQ1oEv3mfmKpWKtoMzyMC4GLBm1Zy5k12fjIw==
