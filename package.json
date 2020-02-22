@@ -16,6 +16,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "gatsby-source-filesystem": "^2.1.48",
     "mdx-deck": "^4.1.0"
   }
 }
